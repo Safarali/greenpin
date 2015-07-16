@@ -36,5 +36,5 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
   #Required for Heroku
-  config.action_mailer.default_url_options = { :host => 'iqro.heroku.com' }
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
