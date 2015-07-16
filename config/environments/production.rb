@@ -78,5 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 #Required for Heroku
 #Note to set this to your actual host name.
-  config.action_mailer.default_url_options = { :host => "localhost:3000" }
+  config.action_mailer.default_url_options = { :host => 'http://iqro.herokuapp.com/' }
 end
