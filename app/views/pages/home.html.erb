@@ -1,11 +1,23 @@
 <div class="jumbotron center">
-  <h1>Greenpin!</h1>
-  <% if user_signed_in? %>
-    # do smth
-   <% else %>
-<p>
-   <%= link_to "Sign in", new_user_session_path, class: "btn btn-default btn-lg" %>
-   <%=link_to "Sign up",new_user_registration_path, class: "btn btn-primary btn-lg" %>
-</p>
-<% end %>
+
+		  <% if user_signed_in? %>
+		    <h2>Welcome to the place that you never want to leave!</h2>
+		    <%= link_to 'New Pin', new_pin_path,class: "btn btn-primary btn-lg" %>
+		    
+		  <% else %>
+
+		<p>
+		   <h2> Join Greenpin to find all the things that inspire you! </h2>
+		   <%= link_to "Sign in", new_user_session_path, class: "btn btn-default btn-lg" %>
+		   <%=link_to "Sign up",new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		</p>
+    <% end %>
+
 </div>
+
+
+<% if user_signed_in? %>
+    <%=link_to "Manage your pins", pins_path %>
+<%end%>
+
+
