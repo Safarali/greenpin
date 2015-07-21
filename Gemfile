@@ -14,7 +14,7 @@ gem "bootstrap-sass"
 gem 'devise', '~> 3.4.0'
 gem 'responders'
 gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 
 gem 'sdoc', '~> 0.4.0', group: :doc
