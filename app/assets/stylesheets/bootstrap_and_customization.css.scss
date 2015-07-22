@@ -1,9 +1,11 @@
 $body-bg:	 white;
+$font-family-sans-serif: 			'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-default-bg: #83b10a;
 $navbar-default-link-color: white;
 $brand-primary: #83b10a;
 
 
+@import 'bootstrap-sprockets';
 
 @import "bootstrap";
 
@@ -15,3 +17,4 @@ $brand-primary: #83b10a;
 .navbar-brand {
 	font-weight: bold;
 }
+
