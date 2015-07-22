@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at DESC")
   end
 
 
