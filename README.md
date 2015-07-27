@@ -1,9 +1,8 @@
 # Greenpin
 
-This is Greenpin,pinterest style web application. 
-I am looking forward to build my first web application.
-[*Univio*] (http://www.univio.com)
+This is Greenpin,pinterest style web application. It contains user registration, uploading pins (pictures) with discription, prifile updating. It is not intented to be the next Instagram. 
 
-by [Safarali Ramazonov] (http://www.univio.co)
 
-However, it is not all I want.I wanna great things
+by Safarali Ramazonov
+
+
