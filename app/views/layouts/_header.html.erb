@@ -24,7 +24,11 @@
                   <span class="glyphicon glyphicon-plus"></span> New Pin
                   <% end %>
                    </li>
-                       <li><%= link_to "Account Settings", edit_user_registration_path %><li>
+                       <li>
+                        <%= link_to edit_user_registration_path do %>
+                        <span class="glyphicon glyphicon-cog"></span> Account Settings
+                        <% end %>
+                        </li> 
                   <li><%= link_to "Log out", destroy_user_session_path, method: :delete %><li>
 
                     <% else %>
