@@ -1,4 +1,12 @@
 class ApplicationController < ActionController::Base
+	def after_sign_in_path_for(resource)
+    if resource.class == Admin
+      rails_admin_path
+    else
+       # Change profile_path to where you want regular users to go
+      stored_location_for(resource) || pins_path
+    end
+  end
 	  # Prevent CSRF attacks by raising an exception.
 	  # For APIs, you may want to use :null_session instead.
 	  protect_from_forgery with: :exception
